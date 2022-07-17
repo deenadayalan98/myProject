@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <title>Login Form</title>
+  </head>
+  <body class="text-center">
+
+   <main class="bg-white">
+    <form id="login">
+        <H3 class="mb-3">Sign In</H3>
+        <div class="alert alert-danger visually-hidden" role="alert" id="error-msg">
+            Invalid Email or password!
+        </div>
+         <div class="alert alert-success visually-hidden" role="alert" id="success-msg">
+             Successfully Loged In!!
+        </div>
+        <input type="Email" id="email" name="email"placeholder="Email Address" class="form-control mb-3">
+        <input type="password" id="pwd" name="pwd"placeholder="password" class="form-control mb-3">
+        <button type="submit" id="btn-submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+    </form>
+   </main>
+   
+  </body>
+   <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    padding-top: 7rem;
+    background: url(contact.jpg) ;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem 4rem;
+    margin: auto;
+}
+#error-msg{
+    font-size: 20px;
+    font-weight: 700;
+    color: brown;
+}
+#success-msg{
+    font-size: 20px;
+    font-weight: 700;
+    color: green;
+}
+.form-control {
+    width: auto;
+    min-height: fit-content;
+    margin: 5%;
+    padding: 10 ;
+    box-sizing: content-box;
+
+}
+input [type="Email"]{
+    box-sizing: border-box;
+    border-radius: 5;
+}

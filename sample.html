@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtval">
+    <button onclick="add()">Add</button>
+    <ul id="lists">
+    </ul>
+</body>
+    <script>
+        count =0;
+        function add(){
+            var li = document.createElement("li");
+            li.setAttribute("id","li",+count);
+            var val =document.getElementById("txtval").value;
+            var txtnode = document.createTextNode(val);
+            li.appendChild(txtnode);
+
+            var btn = document.createElement("button");
+            btn.innerHTML="Remove";
+            btn.setAttribute("onclick",remove("+","li",+count));
+            li.appendChild(btn);
+
+            count =+ i;
+            document.getElementById("lists").appendChild(li);
+
+        }
+         function remove(){
+            var listval =document.getElementById("x");
+            document.getElementById("lists").removeChild(listval);
+
+         }
+    </script>
+</html>
